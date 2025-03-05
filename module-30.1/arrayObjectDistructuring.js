@@ -9,5 +9,13 @@ let disage =distructur.age;
 let dishoby =distructur.hoby;
 console.log(dishoby);
 
-let {name, age, hoby}= distructur;
-console.log(age);
+let {name, agee, hoby}= distructur;
+console.log(agee);
+
+
+// array distructuring 
+
+let arrName = ['tanjil', 'tanvir', 'gias vai'];
+
+let [myNmae, brotherName, InstructorName] = arrName;
+console.log(myNmae);
