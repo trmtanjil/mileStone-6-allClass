@@ -25,3 +25,20 @@ for(let clasName of classs){
     console.log(evenet.target);
  })
 }
+
+document.getElementById('theid' ,
+  
+    function(){
+
+    }
+
+)
+
+//arrow
+document.getElementById('theid' ,
+  
+ ()=>{
+    
+ }
+
+)
