@@ -3,9 +3,15 @@ const person = {
     age : 21,
     country: 'bd',
 }
-console.log(person['name']);
+// console.log(person['name']);
 
 for(let key in person){
     let persons = `key : ${key} value : ${person[key]}`
-    console.log(persons);
+    // console.log(persons);
+}
+
+// for of 
+
+for(let [keys, values] of Object.entries(person)){
+    console.log(`keys : ${keys} value : ${values}`);
 }
