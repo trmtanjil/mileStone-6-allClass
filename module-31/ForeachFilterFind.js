@@ -6,9 +6,11 @@ const product =[
     {id: 5, name: 'motorola', color: 'white',price: 120, country: 'china'},
 ]
 //! map 
-// const prodct = product.map(element=>{
-//     console.log(element);
-// })
+const prodct = product.map(element=>{
+  
+      console.log(element);
+
+})
 
 // !foreach 
 product.forEach(Element=>{
@@ -31,7 +33,7 @@ const productFiltering = product.filter(Element=>{
 })
 
 const newProducnt = product.filter(p=>p.id !=3);
-console.log(newProducnt);
+// console.log(newProducnt);
 // !find 
 const productFind = product.find(prodct => prodct.id===4);
 // console.log(productFind);
