@@ -26,6 +26,13 @@ product.forEach(products=>{
 // !filter 
 const productFiltering = product.filter(Element=>{
     if(Element.price>=1100){
-        console.log(Element);
+        // console.log(Element);
     }
 })
+
+// !find 
+const productFind = product.find(prodct => prodct.id===4);
+// console.log(productFind);
+
+const producColorfind = product.find(product=>product.color==='black');
+console.log(producColorfind);
