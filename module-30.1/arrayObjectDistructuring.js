@@ -3,7 +3,7 @@ let distructur = {
     age: 21,
     hoby : 'eating ',
 };
-
+distructur.d
 let disName =distructur.name;
 let disage =distructur.age;
 let dishoby =distructur.hoby;
