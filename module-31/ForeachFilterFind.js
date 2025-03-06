@@ -30,9 +30,11 @@ const productFiltering = product.filter(Element=>{
     }
 })
 
+const newProducnt = product.filter(p=>p.id !=3);
+console.log(newProducnt);
 // !find 
 const productFind = product.find(prodct => prodct.id===4);
 // console.log(productFind);
 
 const producColorfind = product.find(product=>product.color==='black');
-console.log(producColorfind);
+// console.log(producColorfind);
