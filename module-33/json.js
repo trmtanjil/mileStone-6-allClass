@@ -1,14 +1,19 @@
 const person = {
     Name : "tanjil",
     age : 10,
-    friends: ['sharif', "hosain", 'aziz']
+    friends: ['sharif', "hosain", 'aziz'],
+    status: true,
 }
-console.log(person);
+// console.log(person);
 
 const newperson = JSON.stringify(person);
 console.log(newperson);
+console.log(typeof newperson);
+
+
 
 
 const  jsonclick =()=>{
-    console.log('click')
+    const newperson1 = JSON.parse(newperson);
+    console.log(newperson1);
 }
