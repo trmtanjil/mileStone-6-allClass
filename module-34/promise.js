@@ -17,13 +17,16 @@
 
 
 
-
+                //? another way 
 
 const fetchData=()=>{
   return  new Promise((resolve, reject) => {
-        const status = true;
+        const status = false;
         if(status){
-          
+          const mocdata={
+            json:()=>Promise.resolve({name:'tanjil'})
+          }
+          resolve(mocdata)
         }
         else{
             reject('server error')
@@ -33,5 +36,7 @@ const fetchData=()=>{
 
 fetchData()
 
-.then(res=>console.log(res))
+.then(res=>res.json())
+.then(data=>console.log(data))
+
 .catch(err=>console.log(err))
