@@ -15,14 +15,15 @@
 
 function clickSetItem(){
 const person={
-    name:'tanjil',
+    name:'tanjil 11',
     age: 23,
     stydy: true,
 }
-const convertoStringyfy = JSON.stringify(person);
-localStorage.setItem('my info',convertoStringyfy)
 
-const convertPers= JSON.parse(convertoStringyfy)
-console.log(convertPers.name);
+const converted = JSON.stringify(person)
+localStorage.setItem('info', converted)
 }
-clickSetItem()
+const data = localStorage.getItem('info')
+const convertedpers = JSON.parse(data)
+console.log(convertedpers);
+// clickSetItem()
